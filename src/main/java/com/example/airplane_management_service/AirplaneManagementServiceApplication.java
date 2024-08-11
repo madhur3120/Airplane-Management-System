@@ -2,11 +2,12 @@ package com.example.airplane_management_service;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
+@SpringBootApplication
+@EnableJpaAuditing
 public class AirplaneManagementServiceApplication {
 	private static final Logger logger = LoggerFactory.getLogger(AirplaneManagementServiceApplication.class);
 
@@ -14,5 +15,4 @@ public class AirplaneManagementServiceApplication {
 		SpringApplication.run(AirplaneManagementServiceApplication.class, args);
 		logger.info("Application Started");
 	}
-
 }
