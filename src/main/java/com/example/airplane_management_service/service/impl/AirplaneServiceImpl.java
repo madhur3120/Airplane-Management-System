@@ -3,7 +3,6 @@ package com.example.airplane_management_service.service.impl;
 import com.example.airplane_management_service.entity.Airplane;
 import com.example.airplane_management_service.repositories.AirplaneRepository;
 import com.example.airplane_management_service.service.interfaces.AirplaneService;
-import jakarta.annotation.Nullable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
