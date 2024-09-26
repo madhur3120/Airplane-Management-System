@@ -4,7 +4,6 @@ import com.example.airplane_management_service.entity.City;
 import com.example.airplane_management_service.repositories.CityRepository;
 import com.example.airplane_management_service.service.interfaces.CityService;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
